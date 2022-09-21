@@ -85,7 +85,10 @@ void collision(t_vars *v)
 		if (start->x > 100 && start->x < 450)
 		{
 			if (v->bird->instances[0].y > start->y_b || v->bird->instances[0].y < start->y_h + 1200)
-				exit(0);
+			{
+				v->pause = 1;
+				mlx_set_cursor_mode(v->mlx, MLX_MOUSE_NORMAL);
+			}
 		}
 		start = start->next;
 	}
@@ -131,7 +134,7 @@ void set_score_display(t_vars *v)
 	printf("%s\n", v->score_display);
 }
 
-void add_end(t_list **list, t_list *new)
+void	add_end(t_list **list, t_list *new)
 {
 	t_list *start;
 	start = *list;
