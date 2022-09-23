@@ -84,7 +84,7 @@ t_list *new_list(mlx_image_t *img_h, mlx_image_t *img_b, int y_b, int y_h)
 
 void *thread_launch(void *data)
 {
-	system("./a.out");
+	system("./bird");
 	return (NULL);
 }
 

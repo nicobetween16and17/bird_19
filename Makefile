@@ -21,3 +21,6 @@ clean:
 fclean:
 	make clean
 	rm -f $(NAME)
+re:
+	make fclean
+	make
