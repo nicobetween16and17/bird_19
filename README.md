@@ -7,7 +7,7 @@ It has leaks, it's not normed, the UI his horrendous and the collison mediocre
 
 steps to play
 
-  if you don't have brew -> make brew
+  if you don't have brew -> make brew then restart shell
   
   make lib
   

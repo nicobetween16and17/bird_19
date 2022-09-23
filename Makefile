@@ -9,7 +9,7 @@ lib:
 	brew update
 	brew install glfw
 	git clone https://github.com/codam-coding-college/MLX42.git
-	git clone git@github.com:nicobetween16and17/Libft.git
+	git clone https://github.com/nicobetween16and17/Libft.git
 	cd MLX42 && make re && cd ../Libft && make re && cd ..
 
 $(NAME):
